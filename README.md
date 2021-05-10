@@ -10,3 +10,5 @@
   - <b>employer_activation_codes</b> <i>(employers acivation method with activation code)</i>
   - <b>employer_activation_employees</b> <i>(employers acivation method by employees)</i>
   - <b>job_titles</b> <i>(job positions)</i>
+* * *
+<img src="images/ER Diagram-postgresql.1.png">
