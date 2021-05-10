@@ -11,4 +11,8 @@
   - <b>employer_activation_employees</b> <i>(employers acivation method by employees)</i>
   - <b>job_titles</b> <i>(job positions)</i>
 * * *
+### ER Diagram with PostgreSQL
 <img src="images/ER Diagram-postgresql.1.png">
+
+### ER Diagram with MsSQL
+<img src="images/ER Diagram-mssql.1.png">
