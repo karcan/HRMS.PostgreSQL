@@ -8,7 +8,7 @@
     - <b>employees</b> <i>(hrms system workers)</i>
     - <b>employers</b> <i>(employers for candidates)</i>
       - <b>employer_activation_by_employees</b> <i>(employers activation method by employees)</i>
-  - <b>activation_codes</b> <i>(sistemde ki tüm aktivasyon kodu ile yapılacak onaylar için ürettiğimiz aktivasyon kodlarını tutacağımız ana tablo)</i>
+  - <b>activation_codes</b> <i>(base table for all activation methods with activation code)</i>
     - <b>activation_code_to_employers</b> <i>(employers acivation method with activation code)</i>
     - <b>activation_code_to_candidates</b> <i>(candidates acivation method with activation code)</i>
   - <b>job_titles</b> <i>(job positions)</i>
