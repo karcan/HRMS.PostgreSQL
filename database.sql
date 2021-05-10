@@ -166,3 +166,10 @@ ALTER TABLE "public"."users"
 
 INSERT INTO "public"."job_titles" (title) 
 VALUES ('Software Developer'),('Software Architect');
+
+DO $$
+    DECLARE user_id integer;
+BEGIN
+	INSERT INTO "public"."users" (email,password) VALUES('karcanozbal@outlook.com.tr','123456') RETURNING id INTO user_id;
+	INSERT INTO "public"."candidates" (id,first_name,last_name,identity_number,birth_date) VALUES(user_id,'karcan','özbal','12312312311','1993-11-16');
+END $$;
