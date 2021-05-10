@@ -11,7 +11,7 @@
   - <b>activation_codes</b> <i>(base table for all activation methods with activation code)</i>
     - <b>activation_code_to_employers</b> <i>(employers acivation method with activation code)</i>
     - <b>activation_code_to_candidates</b> <i>(candidates acivation method with activation code)</i>
-  - <b>job_titles</b> <i>(job positions)</i>
+  - <b>job_titles</b> <i>(job titles for job positions)</i>
 * * *
 ### ER Diagram with PostgreSQL
 <p align="center"><img src="images/ER Diagram-postgresql-dark.2.png"></p>
