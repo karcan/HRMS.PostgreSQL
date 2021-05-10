@@ -12,7 +12,7 @@
   - <b>job_titles</b> <i>(job positions)</i>
 * * *
 ### ER Diagram with PostgreSQL
-<img align="center" src="images/ER Diagram-postgresql.1.png">
+<p align="center"><img src="images/ER Diagram-postgresql.1.png"></p>
 
 ### ER Diagram with MsSQL
-<img align="center" src="images/ER Diagram-mssql.1.png">
+<p align="center"><img src="images/ER Diagram-mssql.1.png"></p>
