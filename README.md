@@ -17,4 +17,4 @@
 <p align="center"><img src="images/ER Diagram-postgresql-dark.2.png"></p>
 
 ### ER Diagram with MsSQL
-<p align="center"><img src="images/ER Diagram-mssql.2.png"></p>
+<p align="center"><img src="images/ER Diagram-mssql.3.png"></p>
