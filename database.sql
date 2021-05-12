@@ -127,8 +127,8 @@ ALTER TABLE "public"."users"
 
 ALTER TABLE "public"."activation_code_to_candidates" 
     ADD CONSTRAINT "fk_activation_code_candidates_candidates" 
-    FOREIGN KEY ("candidate_id") 
-    REFERENCES "public"."candidates" ( "id");
+    FOREIGN KEY ("candidate_id")
+    REFERENCES "public"."candidates" ( "id")  ON DELETE CASCADE;
 
 ALTER TABLE "public"."activation_code_to_employers" 
     ADD CONSTRAINT "fk_activation_code_employers_employers" 
