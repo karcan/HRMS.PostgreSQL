@@ -14,4 +14,4 @@
   - <b>job_titles</b> <i>(job titles for job positions)</i>
 * * *
 ### ER Diagram with DrawSQL
-<p align="center"><img src="images/ER Diagram-drawsql.1.png"></p>
+<p align="center"><img src="images/ER Diagram.drawsql.1.png"></p>
