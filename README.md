@@ -13,8 +13,5 @@
     - <b>activation_code_to_candidates</b> <i>(candidates acivation method with activation code)</i>
   - <b>job_titles</b> <i>(job titles for job positions)</i>
 * * *
-### ER Diagram with PostgreSQL
-<p align="center"><img src="images/ER Diagram-postgresql-dark.2.png"></p>
-
-### ER Diagram with MsSQL
-<p align="center"><img src="images/ER Diagram-mssql.3.png"></p>
+### ER Diagram with DrawSQL
+<p align="center"><img src="images/ER Diagram-drawsql.1.png"></p>
