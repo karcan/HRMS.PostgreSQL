@@ -74,7 +74,7 @@ CREATE TABLE public.verification_codes(
 	code CHARACTER VARYING(38) NOT NULL,
 	is_verified boolean DEFAULT false NOT NULL,
 	CONSTRAINT pk_verification_codes PRIMARY KEY (id),
-	CONSTRAINT uc_verification_codes_is_verified UNIQUE (code)
+	CONSTRAINT uc_verification_codes_code UNIQUE (code)
 );
 
 CREATE TABLE public.verification_codes_candidates(
