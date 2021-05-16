@@ -7,17 +7,16 @@ CREATE SCHEMA public;
 /*
  *   FUNCTIONS
 */
-CREATE OR REPLACE FUNCTION validate_email_by_domain(INTEGER, CHARACTER VARYING(255)) 
+CREATE OR REPLACE FUNCTION validate_email_by_domain(user_id INTEGER, web_address CHARACTER VARYING(255)) 
 RETURNS BOOLEAN AS $$
 DECLARE
 	DECLARE user_email_address varchar(320);
-	DECLARE web_address varchar(255);
     DECLARE result boolean;
 BEGIN
-	SELECT email_address INTO user_email_address FROM users where id = $1;
-    SELECT $2 like '%' || SUBSTRING(user_email_address,POSITION('@' in user_email_address) + 1) INTO result;
+	SELECT email_address INTO user_email_address FROM users where id = user_id;
+    SELECT web_address like '%' || SUBSTRING(user_email_address,POSITION('@' in user_email_address) + 1) INTO result;
 	IF result = false THEN
-		raise 'E-mail and web address must have the same domain name.';
+		raise 'E-mail(%) and web address(%) must have the same domain name.',user_email_address,web_address;
 	END IF;
 	RETURN result;
 END; $$ LANGUAGE plpgsql;
