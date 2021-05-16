@@ -15,7 +15,7 @@ DECLARE
     DECLARE result boolean;
 BEGIN
 	SELECT email_address INTO user_email_address FROM users where id = $1;
-    SELECT SUBSTRING(user_email_address,POSITION('@' in user_email_address) + 1) = $2 INTO result;
+    SELECT $2 like '%' || SUBSTRING(user_email_address,POSITION('@' in user_email_address) + 1) INTO result;
 	IF result = false THEN
 		raise 'E-mail and web address must have the same domain name.';
 	END IF;
@@ -135,7 +135,7 @@ END $$;
 DO $$
     DECLARE employer_id integer;
 BEGIN
-	INSERT INTO public.users (email_address,password) VALUES('karcanozbal@karcanyazilim.com.tr','123456') RETURNING id INTO employer_id;
-	INSERT INTO public.employers (id,company_name,web_address) VALUES(employer_id,'Karcan Yazılım A.Ş.','karcanyazilim.com.tr');
+	INSERT INTO public.users (email_address,password) VALUES('karcanozbal@k-software.com','123456') RETURNING id INTO employer_id;
+	INSERT INTO public.employers (id,company_name,web_address) VALUES(employer_id,'Karcan Yazılım A.Ş.','www.k-software.com');
 	INSERT INTO public.employer_phones(employer_id,phone_number) VALUES(employer_id,'8505552233'),(employer_id,'8505552234'),(employer_id,'8505552235');
 END $$;
