@@ -4,6 +4,8 @@
 
 * * *
 
+### Build with <a href="https://github.com/eomeracar">Omer Acar<a> and <a href="https://github.com/ugurryildiz">Ugur Yildiz</a>
+
 <!--
 ### Relation descriptions : 
   - <b>users</b> <i>(all types of users.)</i>
