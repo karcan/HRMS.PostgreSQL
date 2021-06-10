@@ -38,4 +38,4 @@
   - -->
 * * *
 ### ER Diagram with DBEaver
-<p align="center"><img src="images/ER Diagram-postgresql-1.png"></p>
+<p align="center"><img src="images/ER Diagram-postgresql-2.png"></p>
